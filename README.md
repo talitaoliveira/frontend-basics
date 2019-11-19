@@ -1,6 +1,13 @@
 # FrontEnd Basics
+Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqui será atualizado com o passar das aulas.
 
-## 1. Iniciando:
+
+* [1. Iniciando](#1-iniciando)
+* [2. Conteúdo do módulo de FrontEnd](#2-conteúdo-do-módulo-de-frontend)
+* [3. Layout do site a ser desenvolvido](#3-layout-do-site-a-ser-desenvolvido)
+
+
+## 1. Iniciando
 
 ### 1.1 Onde escrever nosso código:
 
