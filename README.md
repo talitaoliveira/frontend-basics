@@ -1,6 +1,12 @@
 # FrontEnd Basics
 
-Conteúdo do módulo de FrontEnd
+## Conteúdo do módulo de FrontEnd
 
-- [Aula 01 - HTML](https://github.com/talitaoliveira/frontend-basics/blob/master/Aula01/)
+- [Aula 01 - HTML](Aula01/)
+
+...
+
+## Layout do site a ser desenvolvido
+
+<img src="Layout/Layout%20Site%20Pessoal.png">
 
