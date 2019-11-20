@@ -4,7 +4,8 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 
 * [1. Iniciando](#1-iniciando)
 * [2. Conteúdo do módulo de FrontEnd](#2-conteúdo-do-módulo-de-frontend)
-* [3. Layout do site a ser desenvolvido](#3-layout-do-site-a-ser-desenvolvido)
+* [3. Primeiros passos](#2-primeiros-passos)
+* [4. Layout do site a ser desenvolvido](#4-layout-do-site-a-ser-desenvolvido)
 
 
 ## 1. Iniciando
@@ -19,7 +20,6 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 - 🌟[Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 - [Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
 
-
 ## 2. Conteúdo do módulo de FrontEnd
 
 - [Aula 01 - HTML](Aula01/)
@@ -27,7 +27,19 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 
 ...
 
-## 3. Layout do site a ser desenvolvido
+## 3. Primeiros passos
+
+- No editor de texto abra um novo arquivo e salve (Ctrl+S) com o nome de sua preferencia
+
+Regras para o nome do arquivo:
+- **Não deve conter espaços**
+- Deve ter a extensão `.html`
+<br>exemplos: `index.html`, `meuarquivo.html`, `meuArquivo.html`
+- Pode usar o [arquivo de exemplo](Aula01/exemplo-documento.html) com o template inicial para começar uma página HTML
+- Sempre que alterar o arquivo não esqueça de **salvar**
+- Saiba onde seu arquivo está para que consiga dar dois cliques nele e que abra no navegador
+
+## 4. Layout do site a ser desenvolvido
 
 <img src="Layout/Layout%20Site%20Pessoal.png" width="50%">
 
