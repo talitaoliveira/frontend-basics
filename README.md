@@ -23,6 +23,7 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 ## 2. Conteúdo do módulo de FrontEnd
 
 - [Aula 01 - HTML](Aula01/)
+- [Aula 02 - HTML](Aula02/)
 
 ...
 
