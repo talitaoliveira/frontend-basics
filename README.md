@@ -24,6 +24,7 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 
 - [Aula 01 - HTML](Aula01/)
 - [Aula 02 - HTML](Aula02/)
+- [Aula 03 - HTML](Aula03/)
 
 ...
 
