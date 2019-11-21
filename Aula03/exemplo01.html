@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aula03 - Exemplo 01 - Elementos de Formulário</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+            <label for="primeiroNome" >Primeiro Nome</label>
+            <input type="text" id="primeiroNome" />
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@email.com" />
+            <br>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="(99) 9.999-999" />
+            <br>
+        </fieldset>
+        <label for="senha">Senha</label>
+        <input type="text" id="senha" />
+        <br>
+        <label for="ser_humano">Ser Humano</label>
+        <input type="checkbox" id="ser_humano" value="ser_humano" name="tipo_de_ser" />
+        <br>
+        <label for="alienigena">Alienigena</label>
+        <input type="checkbox" id="alienigena" value="alienigena" name="tipo_de_ser"/>
+        <br>
+        <label for="filmes">Filmes</label>
+        <select name="filmes" id="filmes">
+            <option value="">Selecione um Filme</option>
+            <option value="iron_man">Iron Man</option>
+            <option value="deadpool">Deadpool</option>
+            <option value="guardioes_da_galaxia">Guardioes da Galaxia</option>
+            <option value="thor">Thor</option>
+        </select>
+        <br>
+        <textarea cols="3" rows="10"></textarea>
+        <br>
+        <input type="button" value="Clique aqui" onclick="alert('Olá voce clicou')"/>
+        <br>
+        <button>Enviar</button>
+        <br>
+        <input type="reset" />
+        <input type="submit" />
+
+    </form>
+
+</body>
+</html>
