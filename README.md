@@ -22,9 +22,9 @@ Neste repositório está todo o conteúdo visto duarnte o curso. O conteúdo aqu
 
 ## 2. Conteúdo do módulo de FrontEnd
 
-- [Aula 01 - HTML](Aula01/)
-- [Aula 02 - HTML](Aula02/)
-- [Aula 03 - HTML](Aula03/)
+- [Aula 01 - HTML - Elementos, Tags, Estrutura, Principais elementos](Aula01/)
+- [Aula 02 - HTML - Tabelas, Iframe, Ancoras/Marcadores, Audio/Video](Aula02/)
+- [Aula 03 - HTML - Formulário, Elementos de Form, Tipos de Input](Aula03/)
 
 ...
 
