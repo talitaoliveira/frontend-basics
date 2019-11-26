@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Design Culture</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function getParameterByName(name, url) {
+				if (!url) url = window.location.href;
+				name = name.replace(/[\[\]]/g, "\\$&");
+			    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+					results = regex.exec(url);
+			    if (!results) return null;
+			    if (!results[2]) return '';
+			    return decodeURIComponent(results[2].replace(/\+/g, " "));
+			}
+			var firstName = getParameterByName('firstName');
+			var lastName = getParameterByName('lastName');
+			var gender = getParameterByName('gender');
+		</script>
+	</head>
+	<body>
+		<h1 id="welcomeMessage"></h1>
+
+		<script type="text/javascript">
+			if (firstName && lastName && gender){
+				document.getElementById("welcomeMessage").innerHTML = "Olá " + firstName + " " + lastName + " do gênero " + gender + "!";
+			} else {
+				document.getElementById("welcomeMessage").innerHTML = "Não enxergo mais os parâmetros na URL :(";
+			}
+		</script>
+	</body>
+</html>
