@@ -1,0 +1,39 @@
+/* Estilo relacionado ao corpo da página */
+body {
+    background-color: gray;
+}
+
+/*Estilo relacionado a primeira secao*/
+section {
+    background: green;
+}
+h1 {
+    color: tomato;
+}
+p {
+    color: rebeccapurple;
+}
+section#primeira-secao {
+    background: red;
+}
+section.secao-especial{
+    background: blue;
+}
+
+/* Estilos aleatorios */
+h1, p {
+    color: #FFF;
+}
+
+section h1{
+    color: pink;
+}
+
+section > p {
+    background: rgb(33, 102, 162);
+}
+
+p + h1 {
+    font-family: Arial;
+}
+
