@@ -1,0 +1,21 @@
+div.div-externa{
+    background: lightblue;
+    border: 5px solid black;
+}
+div.div-interna {
+    background: tomato;
+    margin: 25px;
+    border: 5px solid gray;
+}
+h1 {
+    color: #FFF;
+}
+h1.titulo-esquerda {
+    text-align: left;
+}
+h1.titulo-centro {
+    text-align: center;
+}
+h1.titulo-direita {
+    text-align: right;
+}
