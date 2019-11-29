@@ -1,0 +1,27 @@
+p {
+    color: red;
+}
+p.normal {
+    font-style: normal;
+}
+p.italic {
+    font-style: italic;
+}
+p.oblique {
+    font-style: oblique;
+}
+p.small-caps {
+    font-variant: small-caps;
+}
+p.peso {
+    font-weight: bolder;
+}
+p:nth-child(3) {
+    font-size: 2.2rem;
+}
+p.fonte-nova {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    text-align: left;
+}
+
