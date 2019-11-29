@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Aula05 - Exercicio 02 - Espaçamento</title>
+    <!-- <link rel="stylesheet" href="estilo02.css"> -->
 </head>
+
 <body>
-    
+
+    <!-- <div class="externa">
+        <div class="primeira">
+            Ola mundo
+        </div>
+        <div class="primeira2">
+                Ola mundo
+            </div>
+    </div> -->
+
+
+    <!-- <div class="segunda">Ola mundo</div> -->
+    <style>
+    .results{
+        width: 200px;height: 200px;background-color: red; margin:20px;
+    }
+    </style>
+
+
+    <div id="container"></div>
+    <script>
+        var pessoas = ['talita', 'bruno', 'silva'];
+        var container = document.getElementById("container");
+        var divPessoa;
+
+        pessoas.forEach((pessoa) => {
+
+            divPessoa = document.createElement('div');
+            divPessoa.className = 'results';
+            divPessoa.innerHTML = pessoa;
+            container.appendChild(divPessoa);
+        })
+    </script>
 </body>
+
 </html>

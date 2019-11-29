@@ -1,0 +1,36 @@
+/*Resetando estilo dos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Inicio do estilo da página */
+div {
+    width: 100%;
+}
+div.externo {
+    height: 1400px;
+    background-image: url(textura.jpg);
+}
+div.interna {
+    height: 700px;
+    background-color: green;
+    background-image: url(images/foto-bonita.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+/* Outros estilos */
+p {
+    letter-spacing: 10px;
+}
+
+div.teste{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    /* padding: 50px; */
+    /* box-sizing: border-box; */
+}
+div.teste p {
+    margin: 50px;
+}

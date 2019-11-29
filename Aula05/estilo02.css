@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    width: 200px;
+    height: 200px;
+}
+div.primeira {
+    background-color: red;
+    /* margin: 200px; */
+    display: flex;
+    justify-content: center;
+    /* opacity: 0.1; */
+    /* background-color: rgba(0,255,0, 0.1) */
+    /* border-width: 10px;
+    border-color: blue;
+    border-style: solid; */
+    /* box-sizing: border-box;
+    box-shadow: 5px 10px 10px #000;
+    border: 5px solid yellow; */
+    border-top-right-radius: 500px;    
+    border-bottom-left-radius: 500px; 
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+div.primeira2{
+    background-color: red;
+    /* margin: 200px; */
+    display: flex;
+    justify-content: center;
+    /* opacity: 0.1; */
+    /* background-color: rgba(0,255,0, 0.1) */
+    /* border-width: 10px;
+    border-color: blue;
+    border-style: solid; */
+    /* box-sizing: border-box;
+    box-shadow: 5px 10px 10px #000;
+    border: 5px solid yellow; */
+    border-top-right-radius: 500px;    
+    border-bottom-left-radius: 500px; 
+    position: absolute;
+    right: 100px;
+    bottom: 200px;
+}
+
+div.externa {
+    position: relative;
+    width: 500px;
+    height: 500px;
+     background-color: yellow;
+}
+
+div.primeira:hover {
+    /* border-style: none; */
+    box-shadow: none;
+    
+}
+
+div.segunda {
+    background-color: blue;
+    padding: 200px;
+}
+
+/* div.primeira:hover {
+    background: pink;
+    margin-top: 150px;
+} */
