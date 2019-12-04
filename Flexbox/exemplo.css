@@ -1,0 +1,24 @@
+.div-externa {
+    width: 100%;
+    height: 700px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div-externa div {
+    width: 100px;
+    height: 100px;
+}
+
+.div-primeira {
+    background-color: red;
+}
+.div-segunda {
+    background-color: blue;
+}
+.div-terceira {
+    background-color: yellow;
+}
