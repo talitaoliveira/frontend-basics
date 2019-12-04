@@ -1,0 +1,28 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando a navegação */
+nav {
+    padding: 20px;
+    background-color: tomato;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Estilizando as divs */
+div {
+    height: 1000px;
+}
+.primeira-div {
+    background-color: red;
+    opacity: 0.3;
+}
+.segunda-div {
+    background-color: blue;
+    opacity: 0.3;
+}
