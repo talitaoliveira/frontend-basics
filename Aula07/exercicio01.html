@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Aula07 - Exercicio 01 - Javascript</title>
+
+    <script>
+    let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let message = '';
+
+    numeros.forEach((numero, indice)  => {
+
+        if(numero % 2 == 0){
+            if(indice < numeros.length - 1){
+                message = message + (numero*5) + ',';
+            }else{
+                message = message + (numero*5);
+            }
+        }
+    });
+
+    console.log(message);
+</script>
 </head>
 <body>
     
