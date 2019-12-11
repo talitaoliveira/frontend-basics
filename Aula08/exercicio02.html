@@ -2,9 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Aula08 - Exercicio 02 - Javascript</title>
+    <title>Aula08 - Exercicio 02 - Javascript - Boleto</title>
 
     <script>
+        let boleto = {
+            valor: 500,
+            diaVencimento: 15,
+            mesVencimento: 5
+        }
+
+        let pessoa = {
+            nome: 'Talita',
+            valorDisponivel: 750,
+            pagarBoleto: function(qualquerBoleto) {
+                this.valorDisponivel = this.valorDisponivel - qualquerBoleto.valor;
+                console.log(`Boleto de valor ${qualquerBoleto.valor} foi pago por ${this.nome}
+                e agora restam ${this.valorDisponivel}. #TaPago!`);
+            }
+        }
+
     </script>
 </head>
 
