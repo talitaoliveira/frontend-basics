@@ -116,6 +116,28 @@ footer{
     padding: 50px;
 } */
 
+/* media queries */
+@media(min-width: 768px) {
+    section#about > div {
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+    .conteudo-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    section#portfolio h2{
+        margin-bottom: 10px;
+    }
+    section#portfolio > div div{
+        flex-direction: row;
+    }
+
+   
+}
+
 
 
 
