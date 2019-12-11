@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 08 - Exemplo javascript - Luz</title>
+
+    <style>
+        body {
+            background-color: #000;
+        }
+        .luz-ligada {
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <button id="ligarLuz">Ligar</button>
+    <button id="desligarLuz">Desligar</button>
+    
+    <script>
+
+        let meuBody = document.body;
+
+        let luz = {
+            tipo: 'led',
+            ligada: false,
+            ligar: function() {
+                if( this.ligada ===  false ) {
+                    this.ligada = true;
+                    console.log('luz ligada');
+                    meuBody.classList.add("luz-ligada");
+                }else{
+                    console.log('luz já esta ligada')
+                }
+            },
+            desligar: function() {
+                if( this.ligada === true ) {
+                    this.ligada = false;
+                    console.log('luz desligada')
+                    meuBody.classList.remove("luz-ligada");
+                }else{
+                    console.log('luz já esta desligada')
+                }
+            }
+        }
+
+        let btnLigarLuz = document.getElementById("ligarLuz");
+        let btnDesligarLuz = document.getElementById("desligarLuz");
+
+        btnLigarLuz.addEventListener('click', () => {
+            luz.ligar();
+        });
+
+        btnDesligarLuz.addEventListener('click', () =>{
+            luz.desligar();
+        })
+        </script>
+
+</body>
+</html>
