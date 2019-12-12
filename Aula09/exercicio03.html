@@ -4,6 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Aula09 - Exercicio 01 - Lista de Pessoas - Array</title>
+
+    <style>
+    .container-pessoa {
+        background-color: tomato;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-pessoa > h1 {
+        text-transform: capitalize;
+        color: #FFF;
+    }
+    
+    </style>
+
 </head>
 
 <body>
@@ -20,6 +37,31 @@
         - Precisamos estilizar o container com as pessoas
         - Precisamos estilizar o elemento de cada pessoa
      -->
+
+    <div id="container">
+    </div>
+
+
+    <script>
+
+     let containerPessoas = document.getElementById("container")
+     let pessoas = ['talita', 'joao', 'jose', 'maria'];
+
+     pessoas.forEach((pessoa) => {
+        let divPessoa = document.createElement('div');
+        // divPessoa.innerHTML = pessoa;
+       let nomePessoa = document.createElement('h1');
+       nomePessoa.innerHTML = pessoa;
+
+       divPessoa.appendChild(nomePessoa);
+       
+       
+        divPessoa.classList.add('container-pessoa');
+        containerPessoas.appendChild(divPessoa);
+
+     });
+
+    </script>
 
 </body>
 
