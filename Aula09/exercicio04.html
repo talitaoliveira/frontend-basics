@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula09 - Exercicio 01 - Lista de Pessoas - Array</title>
+
+    <style>
+    .container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container-pessoa {
+        background-color: tomato;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+    }
+    .container-pessoa > h1 {
+        text-transform: capitalize;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 
+        NO HTML
+        - Precisamos de um container onde será mostrada a lista de pessoas
+
+        NO JS
+        - Precisamos de uma lista de pessoas
+        - Precisamos poular o container com essa lista de pessoas
+
+        NO CSS
+        - Precisamos estilizar o container com as pessoas
+        - Precisamos estilizar o elemento de cada pessoa
+     -->
+
+    <div id="container" class="container">
+    </div>
+
+
+    <script>
+        
+
+     let containerPessoas = document.getElementById("container")
+     let pessoas = [
+         {nome: 'talita', telefone: '(81) 9.9999-9999', email: 'litaa@gmail.com'},
+         {nome: 'joao', telefone: '(81) 9.8888-8888', email: 'joao@gmail.com'},
+         {nome: 'jose', telefone: '(81) 9.7777-7777', email: 'jose@gmail.com'},
+         {nome: 'maria', telefone: '(81) 9.6666-6666', email: 'maria@gmail.com'},
+         {nome: 'fulano', telefone: '(81) 9.5555-5555', email: 'fulano@gmail.com'},
+         {nome: 'beltrano', telefone: '(81) 9.4444-44444', email: 'beltrano@gmail.com'}
+     ];
+
+     pessoas.forEach((pessoa) => {
+        let divPessoa = document.createElement('div');
+
+        let nomePessoa = document.createElement('h1');
+        nomePessoa.innerHTML = pessoa.nome;
+
+        let emailPessoa = document.createElement('p');
+        emailPessoa.innerHTML = `<strong>email: </strong>${pessoa.email}`;
+
+        let telefonePessoa = document.createElement('p');
+        telefonePessoa.innerHTML = `<strong>telefone: </strong>${pessoa.telefone}`;
+        
+        divPessoa.appendChild(nomePessoa);
+        divPessoa.appendChild(emailPessoa);
+        divPessoa.appendChild(telefonePessoa);
+       
+       
+        divPessoa.classList.add('container-pessoa');
+        containerPessoas.appendChild(divPessoa);
+
+     });
+
+    </script>
+
+</body>
+
+</html>
