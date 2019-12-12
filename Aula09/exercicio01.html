@@ -6,5 +6,45 @@
 </head>
 <body>
     
+    <p>Adivinhe um numero de 1 a 10</p>
+    <input type="number" id="input-numero">
+    <button id="btn-numero">Submit</button>
+    <p id="msg-alerta"></p>
+
+    <script>
+    // Definir variaveis
+    let inputNumero = document.getElementById("input-numero");
+    let btnNumero = document.getElementById("btn-numero");
+    let msgAlerta = document.getElementById("msg-alerta");
+    
+    
+    let numeroRandomico = Math.random();
+    numeroRandomico = numeroRandomico * 11;
+    numeroRandomico = Math.floor(numeroRandomico);
+    console.log(numeroRandomico);
+    
+    btnNumero.addEventListener('click', () => {
+        let valorDigitado = inputNumero.value;
+        
+        if( valorDigitado === '' ){
+            msgAlerta.innerHTML = "Digite um valor";
+            msgAlerta.style.color = "red";
+        } else {
+
+            let inteiroDigitado = parseInt(valorDigitado);
+
+            if( inteiroDigitado === numeroRandomico ){
+                msgAlerta.innerHTML = "Voce acertou";
+                msgAlerta.style.color = "green";
+            }else{
+                msgAlerta.innerHTML = "Voce errou! Tente novamente";
+                msgAlerta.style.color = "red";
+            }
+
+        }
+    });
+    
+    </script>
+
 </body>
 </html>
