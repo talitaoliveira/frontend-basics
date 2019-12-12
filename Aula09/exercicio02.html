@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Aula09 - Exercicio 01 - TODO List </title>
+
+    <style>
+        .concluido {
+            text-decoration: line-through;
+        }
+        /*  */
+        body  {
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 500px;
+        }
+        .container > h1 {
+            text-align: center;
+        }
+        .container-input{
+            display: flex;
+            justify-content: center;
+        }
+        .input-novo-item {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .btn-novo-item {
+            text-transform: uppercase;
+            background-color: tomato;
+            color: #FFF;
+        }
+        .lista-items {
+            list-style: none;
+        }
+        .lista-items li {
+            margin: 15px 0;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
     <!-- 
@@ -19,6 +68,55 @@
         - Para manipulacao com Javascript precisamos definir identificadores
         - Para manipulacao de CSS vamos usar classes
      -->
-     s
+
+    <div class="container">
+        <h1>TODO List</h1>
+        <div class="container-input">
+            <input type="text" id="input-novo-item" class="input-novo-item">
+            <button id="btn-novo-item" class="btn-novo-item">Adicionar</button>
+        </div>
+
+        <ul id="lista-items" class="lista-items">
+            <li>Comprar pão</li>
+            <li>Estudar</li>
+            <li class="concluido">Lavar banheiro</li>
+        </ul>
+    </div>
+
+    <script>
+        // Definir as variaveis
+        let inputNovoItem = document.getElementById("input-novo-item");
+        let btnNovoItem = document.getElementById("btn-novo-item");
+        let listaItem = document.getElementById("lista-items");
+
+        // Para cada item clicado deve marcar como concluido
+        listaItem.addEventListener('click', (evt) => {
+            if (evt.target.tagName === 'LI') {
+                evt.target.classList.toggle('concluido')
+            }
+        });
+
+        // Pegar o valor do input digitado
+        btnNovoItem.addEventListener('click', adicionaItemLista);
+
+        function adicionaItemLista() {
+
+            let textoDigitado = inputNovoItem.value;
+            if (textoDigitado === "") {
+                alert('Digite um item');
+            } else {
+                let elementLi = document.createElement('li');
+                elementLi.innerText = textoDigitado;
+                listaItem.appendChild(elementLi);
+
+                inputNovoItem.value = "";
+
+            }
+
+        }
+
+    </script>
+
 </body>
+
 </html>
